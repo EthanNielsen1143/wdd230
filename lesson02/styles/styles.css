@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    text-align: center;
 }
 
 .card {
@@ -12,7 +13,6 @@ body {
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
-    text-align: center;
 }
 
 h1, h2, h3 {
@@ -37,5 +37,5 @@ img {
 }
 
 p {
-    color: #666;
+    color: #8a1e1e;
 }

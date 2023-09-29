@@ -13,3 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
       lastModifiedElement.textContent = lastModified;
     }
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Find the hamburger icon and mobile menu
+    const hamburger = document.querySelector('hamburger');
+    const mobileMenu = document.querySelector('nav ul');
+    
+    // Toggle the mobile menu when clicking the hamburger icon
+    hamburger.addEventListener('click', function () {
+      mobileMenu.classList.toggle('active');
+    });
+  });

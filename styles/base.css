@@ -70,6 +70,8 @@ nav {
   width: fit-content;
   width: -moz-fit-content;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between; /* Add this to create space between links and hamburger */
 }
 
 nav span {
@@ -78,6 +80,25 @@ nav span {
   background-color: var(--lightgray);
   margin: 0 0.25rem 0.25rem;
   text-align: center;
+}
+
+/* Styles for the hamburger menu icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nav.active {
+  opacity: 1;
 }
 
 /* Styles for navigation links turned into buttons */
@@ -100,7 +121,7 @@ nav ul li a {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 nav ul li a:hover {
@@ -128,12 +149,19 @@ main {
   margin: 1.5rem 1rem;
 }
 
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
 .card {
   background-color: rgb(43, 43, 43);
   border: var(--bord);
   padding: var(--padd);
   margin-bottom: 1rem;
-  color: white
+  color: white;
+  
 }
 
 .card h3 {
@@ -146,18 +174,18 @@ main {
 }
 
 .card ul li {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 
 .card ul li a {
   display: block;
-  padding: 10px 20px;
+  padding: 10px 200px;
   background-color: var(--byuiblue);
   color: #fff;
   text-align: center; 
   text-decoration: none;
   border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color .5s, color 0.5s;
 }
 
 .card ul li a:hover {
@@ -168,25 +196,5 @@ main {
 footer {
   border-top: var(--bord);
   font-size: smaller;
-  background-color: var(--lightgray);
-  padding: 0.5rem;
-  text-align: center;
-  min-height: 50px;
-}
-
-footer p {
-  margin: 0 0 0 0.5rem;
-}
-
-/* Styles for links and other elements */
-a {
-  color: black;
-}
-
-a:link {
-  color: white;
-}
-
-a:active {
-  color: var(--red);
+  background-color: var
 }

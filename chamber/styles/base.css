@@ -9,6 +9,8 @@ body {
 
 /* Header styles */
 header {
+    position: sticky; 
+    top: 0; 
     background-color: #9D6A89;
     color: #fff;
     padding: 3em;
@@ -28,12 +30,34 @@ header {
 }
 
 .hamburger {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100px;
     cursor: pointer;
-    padding: 0;
+}
+
+.hamburger::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 6px;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+.hamburger::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: -6px;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100px;
 }
 
 /* Navigation styles */

@@ -97,7 +97,7 @@ main {
 
 /* Hero section styles */
 .hero {
-    background-image: url('/chamber/images/rosevillehero.jpg');
+    background-image: url('chamber/images/rosevillehero.jpg');
     background-size: cover;
     background-position: bottom center;
     text-align: center;

@@ -8,9 +8,8 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="URL_to_your_image.jpg">
     <meta property="og:url" content="URL_to_your_website">
-    
-    <!-- Include your CSS files here -->
     <link rel="stylesheet" href="chamber/styles/base.css">
+    <script src="/chamber/scripts/main.js"></script>
     
     <title>Roseville - Chamber of Commerce</title>
 </head>
@@ -23,6 +22,9 @@
         </div>
         <div class="hamburger"></div>
     </header>
+
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+    <label for="dark-mode-toggle" class="dark-mode-label"></label>
     
     <nav>
         <ul>
@@ -41,7 +43,7 @@
         </section>
         
         <section class="events">
-            <h2>Upcoming Events</h2>
+            <h2>Upcoming Events:</h2>
             <ul>
                 <li>Event 1 - Date</li>
                 <li>Event 2 - Date</li>
@@ -52,7 +54,7 @@
         <section class="weather">
             <h2>Weather Forecast</h2>
             <p>Today's weather: Sunny</p>
-            <p>Temperature: 25°C</p>
+            <p>Temperature: 52°F</p>
         </section>
         
         <section class="spotlights">
@@ -85,5 +87,20 @@
     
     <!-- Include your JavaScript for the hamburger menu here -->
     <script src="/chamber/scripts/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+            darkModeToggle.addEventListener("change", () => {
+                if (darkModeToggle.checked) {
+                    // Enable dark mode
+                    document.body.classList.add("dark-mode");
+                } else {
+                    // Disable dark mode
+                    document.body.classList.remove("dark-mode");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,210 @@
+/* Apply a normalize or reset CSS here */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    position: sticky; 
+    top: 0; 
+    background-color: #9D6A89;
+    color: #fff;
+    padding: 3em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    /* border-color: #725D68; */
+}
+
+#roselogo {
+    border-radius: 30%;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 6px;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+.hamburger::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: -6px;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8c3dc0;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ab28d3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
+/* Events section styles */
+.events {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.events h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.events li {
+    margin: 5px 0;
+}
+
+/* Weather section styles */
+.weather {
+    background-color: #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.weather h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Spotlights section styles */
+.spotlights {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotlight {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.spotlight img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Contact info styles */
+.contact-info {
+    margin-bottom: 10px;
+}
+
+/* Development info styles */
+.development-info {
+    font-size: 12px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    nav {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    nav.active ul {
+        display: block;
+    }
+}

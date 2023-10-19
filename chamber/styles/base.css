@@ -1,5 +1,7 @@
 /* Apply a normalize or reset CSS here */
-
+:root {
+    --mainblue: #0f65ac;
+}
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
@@ -11,22 +13,22 @@ body {
 header {
     position: sticky; 
     top: 0; 
-    background-color: #9D6A89;
+    background-color: #0f65acc4;
     color: #fff;
-    padding: 3em;
+    padding: .5em;
     text-align: left;
-    display: flex;
+    display: flex;  
     align-items: center;
     gap: 1.5em;
-    /* border-color: #725D68; */
 }
 
 #roselogo {
+    width: 175px;
     border-radius: 30%;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 24px;    
 }
 
 .hamburger {
@@ -36,6 +38,7 @@ header {
     background-color: black;
     border-radius: 100px;
     cursor: pointer;
+    position: relative;
 }
 
 .hamburger::after {
@@ -95,16 +98,19 @@ main {
 
 /* Hero section styles */
 .hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('/chamber/images/rosevilleherolarge.webp');
     background-size: cover;
+    background-position: bottom;
     text-align: center;
-    padding: 100px;
+    padding: 70px;
     color: white;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 50px;
     margin: 10px 0;
+    text-shadow: 4px 4px 8px #000000;
+    font-weight: bold;
 }
 
 .hero p {
@@ -114,12 +120,11 @@ main {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ab28d3;
+    background-color: var(--mainblue);
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 20px;
     transition: background-color 0.3s;
 }
 
@@ -127,11 +132,54 @@ main {
     background-color: #ff9900;
 }
 
-/* Events section styles */
+.dark-mode {
+    background-color: #000;
+}
+
+.dark-mode-toggle {
+    display: none;
+}
+
+.dark-mode-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.dark-mode-label::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.dark-mode-toggle:checked + .dark-mode-label::before {
+    transform: translateX(25px);
+}
+
+.dark-mode-toggle,
+.dark-mode-label {
+    z-index: 999;
+}
+
 .events {
     background-color: #f4f4f4;
     padding: 20px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
 }
 
 .events h2 {
@@ -153,6 +201,10 @@ main {
     background-color: #ddd;
     padding: 20px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .weather h2 {
@@ -160,11 +212,32 @@ main {
     margin: 10px 0;
 }
 
+.weather p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.weather input {
+    margin: 10px 0;
+    width: 10em;
+    height: 2em;
+}
+
+.weather-results {
+    background-color: var(--mainblue);
+    padding: 3em;
+    border-radius: 70%;
+    margin-top: 1em;
+    color: white;
+}
+
 /* Spotlights section styles */
 .spotlights {
+    background-color: #bdbdbd;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .spotlight {

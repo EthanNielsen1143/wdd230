@@ -24,7 +24,6 @@
         <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
         <label for="dark-mode-toggle" class="dark-mode-label"></label>
     </header>
-
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -34,11 +33,10 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    
     <main>
         <section class="hero">
             <h1>Welcome to Roseville Chamber of Commerce</h1>
-            <a href="#" class="cta-button">Join Now</a>
+            <a href="/chamber/community.html" class="cta-button" target="_blank" >Join Now</a>
         </section>
         
         <section class="events">
@@ -52,10 +50,15 @@
         
         <section class="weather">
             <h2>Weather Forecast</h2>
-            <p>Today's weather: Sunny</p>
-            <p>Temperature: 52°F</p>
+            <p>Temperature: <input type="number" id="temperature-input">°F</p>  
+            <p>Wind Speed: <input type="number" id="windspeed-input">MPH</p>  
+            <input type="submit" id="submit-button" value="Calculate Wind Chill">
+            <div class="weather-results">
+                <p>Today's weather: <span id='temperature-description'>Wating for input...</span></p>
+                <p>Today's wind chill: <span id='wind-chill'>N/A</span></p>
+            </div>
         </section>
-        
+
         <section class="spotlights">
             <h2>Spotlights</h2>
             <div class="spotlight">
@@ -83,23 +86,7 @@
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
-    
     <!-- Include your JavaScript for the hamburger menu here -->
     <script src="/chamber/scripts/main.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const darkModeToggle = document.getElementById("dark-mode-toggle");
-
-            darkModeToggle.addEventListener("change", () => {
-                if (darkModeToggle.checked) {
-                    // Enable dark mode
-                    document.body.classList.add("dark-mode");
-                } else {
-                    // Disable dark mode
-                    document.body.classList.remove("dark-mode");
-                }
-            });
-        });
-    </script>
 </body>
 </html>

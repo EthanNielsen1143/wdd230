@@ -1,5 +1,7 @@
 /* Apply a normalize or reset CSS here */
-
+:root {
+    --mainblue: #0f65ac;
+}
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
@@ -118,7 +120,7 @@ main {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0f65ac;
+    background-color: var(--mainblue);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -199,22 +201,34 @@ main {
     background-color: #ddd;
     padding: 20px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .weather h2 {
     font-size: 24px;
     margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .weather p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 24px;
     margin: 10px 0;
+}
+
+.weather input {
+    margin: 10px 0;
+    width: 10em;
+    height: 2em;
+}
+
+.weather-results {
+    background-color: var(--mainblue);
+    padding: 3em;
+    border-radius: 70%;
+    margin-top: 1em;
+    color: white;
 }
 
 /* Spotlights section styles */

@@ -84,3 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+
+window.addEventListener('resize', () => {
+  const sidebar = document.getElementsByClassName('side-column')[0];
+  const content = document.getElementsByClassName('content')[0];
+  console.log
+  content.style.height = sidebar.clientHeight
+})

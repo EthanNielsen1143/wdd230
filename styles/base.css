@@ -10,7 +10,7 @@
   --red: rgb(182, 0, 19);
   --mustard: rgb(182, 163, 0);
   --callout: rgb(230, 243, 254);
-  --error: rgb(255, 215, 225);  
+  --error: rgb(255, 215, 225);
   --warning: rgb(255, 255, 225);
   --details: rgb(238, 254, 238);
   /* Define your spacing and border variables here */
@@ -19,7 +19,7 @@
 }
 
 body {
-  font: 400 16px / 1.5 Montserrat, Helvetica, sans-serif;
+  font: 400 16px/1.5 Montserrat, Helvetica, sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   display: flex;
@@ -27,7 +27,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
   background-color: #6e6e6eb2;
 }
 
@@ -61,7 +60,7 @@ h1 {
   color: #fff;
   font-size: 3.0rem;
   margin-left: 100px;
-} 
+}
 
 .hero-container {
   display: flex;
@@ -70,9 +69,9 @@ h1 {
   background-image: url('../images/LDS_Oakland-Exterior_002.webp');
   background-size: cover;
   background-position: 25% 20%;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
-}   
+}
 
 /* Styles for nav and nav span */
 nav {
@@ -133,7 +132,6 @@ nav ul {
   display: flex;
   padding: 0;
   gap: 15px;
-  
 }
 
 nav ul li {
@@ -213,7 +211,7 @@ main {
   padding: 10px 75px;
   background-color: var(--byuiblue);
   color: #fff;
-  text-align: center; 
+  text-align: center;
   text-decoration: none;
   border-radius: 20px;
   transition: background-color .5s, color 0.5s;
@@ -233,18 +231,29 @@ main {
 
 .info-container {
   width: 100%;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(95, 95, 95);
+}
 
+.info-container h2 {
+  margin-top: 2em;
+}
+
+#pageVisitCounter {
+  font-size: 18px;
+  background-color: var(--byuiblue);
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 10px;
 }
 
 /* Styles for footer */
 footer {
   border-top: var(--bord);
   font-size: smaller;
-  background-color: var
 }
 
 .footer-container {

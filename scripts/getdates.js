@@ -1,26 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var currentYear = new Date().getFullYear();
-    var lastModified = "Last modified: " + document.lastModified;
-    
-    // Find and update the elements in your HTML
-    var currentYearElement = document.getElementById('currentYear');
-    if (currentYearElement) {
-      currentYearElement.textContent = currentYear;
-    }
-  
-    var lastModifiedElement = document.getElementById('lastModified');
-    if (lastModifiedElement) {
-      lastModifiedElement.textContent = lastModified;
-    }
-  });
+  var currentYear = new Date().getFullYear();
+  var lastModified = "Last modified: " + document.lastModified;
 
-  document.addEventListener('DOMContentLoaded', function () {
-    // Find the hamburger icon and mobile menu
-    const hamburger = document.querySelector('hamburger');
-    const mobileMenu = document.querySelector('nav ul');
-    
-    // Toggle the mobile menu when clicking the hamburger icon
-    hamburger.addEventListener('click', function () {
-      mobileMenu.classList.toggle('active');
-    });
-  });
+  // Find and update the elements in your HTML
+  var currentYearElement = document.getElementById('currentYear');
+  if (currentYearElement) {
+      currentYearElement.textContent = currentYear;
+  }
+
+  var lastModifiedElement = document.getElementById('lastModified');
+  if (lastModifiedElement) {
+      lastModifiedElement.textContent = lastModified;
+  }
+
+  let pageVisits = localStorage.getItem('pageVisits');
+  if (!pageVisits) {
+      pageVisits = 1;
+  } else {
+      pageVisits = parseInt(pageVisits) + 1;
+  }
+
+  const pageVisitCounter = document.getElementById('pageVisitCounter');
+  if (pageVisitCounter) {
+      pageVisitCounter.textContent = `Page Visits: ${pageVisits}`;
+  }
+
+  localStorage.setItem('pageVisits', pageVisits.toString());
+});

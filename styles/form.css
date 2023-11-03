@@ -1,0 +1,332 @@
+:root {
+    --alink: #0000ee;
+    --avisited: #551a8b;
+    /* Define your color variables here */
+    --lightgray: rgb(220, 220, 220);
+    --gray: rgb(150, 150, 150);
+    --darkgray: rgb(50, 50, 50);
+    --byuiblue: rgb(0, 110, 182);
+    --bloo: rgb(0, 36, 110);
+    --red: rgb(182, 0, 19);
+    --mustard: rgb(182, 163, 0);
+    --callout: rgb(230, 243, 254);
+    --error: rgb(255, 215, 225);
+    --warning: rgb(255, 255, 225);
+    --details: rgb(238, 254, 238);
+    /* Define your spacing and border variables here */
+    --padd: 0.5rem;
+    --bord: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font: 400 16px/1.5 Montserrat, Helvetica, sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #6e6e6eb2;
+  }
+  
+  /* Styles for header, logo, and h1 */
+  header {
+    background-color: rgb(43, 43, 43);
+    padding: 30px 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header img {
+    max-width: 200px;
+    border-radius: 40%;
+  }
+  
+  .logo {
+    width: 72px;
+    height: auto;
+    background-color: var(--byuiblue);
+    padding: 12px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3.0rem;
+    margin-left: 100px;
+  }
+  
+  .hero-container {
+    display: flex;
+    width: 100%;
+    height: 20em;
+    background-image: url('../images/LDS_Oakland-Exterior_002.webp');
+    background-size: cover;
+    background-position: 25% 20%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styles for nav and nav span */
+  nav {
+    position: relative;
+    padding-top: 30px;
+    width: fit-content;
+    width: -moz-fit-content;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--darkgray);
+    font-weight: bold;
+    margin: 0 1rem;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  #hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+  }
+  
+  nav a:nth-child(1) {
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a,
+    .nav-separator {
+      margin: 0.5rem 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  /* Styles for navigation links turned into buttons */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--byuiblue);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--navy);
+  }
+  
+  nav span a:link,
+  nav span a:visited,
+  nav span a:active,
+  nav span a:focus {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    order: var(--bord);
+  }
+  
+  nav span a:hover {
+    background-color: var(--byuiblue);
+    color: #ffffff;
+  }
+  
+  /* Styles for main and card */
+  main {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  .card-container {
+    background-color: rgb(43, 43, 43);
+    border: var(--bord);
+    padding: var(--padd);
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 25%;
+  }
+  
+  .card h3 {
+    color: white;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .card ul li {
+    margin: 0.75rem 0;
+  }
+  
+  .card ul li a {
+    display: block;
+    padding: 10px 75px;
+    background-color: var(--byuiblue);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color .5s, color 0.5s;
+  }
+  
+  .card ul li a:hover {
+    background-color: var(--navy);
+  }
+  
+  .map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 45, 45);
+  }
+  
+  .info-container {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(95, 95, 95);
+  }
+  
+  .info-container h2 {
+    margin-top: 2em;
+  }
+
+  /* Apply common styles to all form elements */
+form label, form input, form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style labels for form elements */
+  form label {
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  
+  /* Style text input fields */
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"],
+  form input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+  }
+  
+  /* Style the submit button */
+  form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #1374a8;
+  }
+  
+  #passwordMismatch {
+    margin-top: -10px;
+  }
+  
+  #pageRating {
+    width: 100%;
+  }
+  
+  #pageRatingValue {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  form label, form input, form button {
+    text-align: left;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  fieldset {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+  }
+  
+  
+  #pageVisitCounter {
+    font-size: 18px;
+    background-color: var(--byuiblue);
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 10px;
+  }
+  
+  /* Styles for footer */
+  footer {
+    border-top: var(--bord);
+    font-size: smaller;
+  }
+  
+  .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(95, 95, 95);
+  }
+  

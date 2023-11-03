@@ -6,7 +6,7 @@
     <title>Ethan Nielsen - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development - Ethan Nielsen's course assignment portal">
     <meta name="author" content="Ethan Nielsen">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
     <script src="./scripts/getdates.js"></script>
     <script src="./scripts/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -36,23 +36,32 @@
         </div>
         <div class="grid-container">
             <div class="side-column">
-                <div class="side-column-cards">
-                    <h2>Population Diversity</h2>
-                    <img src="imagescopy/Race and Ethnicity.png" alt="pie chart">
-                    <h2>Occupations</h2>
-                    <img src="imagescopy/Occupations.png" alt="pie chart">
-                    <h2>Employment by Industry</h2>
-                    <img src="imagescopy/Employment by Industries.png" alt="pie chart">
+                <div id="sidebar-content"> <!-- You were missing the closing div tag here -->
+                    <div class="side-column-cards">
+                        <h1 id="welcomeMessage"></h1>
+                        <h2>Population Diversity</h2>
+                        <img src="imagescopy/Race and Ethnicity.png" alt="pie chart">
+                        <h2>Occupations</h2>
+                        <img src="imagescopy/Occupations.png" alt="pie chart">
+                        <h2>Employment by Industry</h2>
+                        <img src="imagescopy/Employment by Industries.png" alt="pie chart">
+                    </div>
                 </div>
             </div>
             <div class="content">
-                <h2>Activites</h2>
-                <img src="./imagescopy/activities/california-roseville-top-things-to-do-fountains-at-roseville2.jpg" alt="roseville">
-                <img src="./imagescopy/activities/california-roseville-top-things-to-do-golfland-sunsplash1.jpg" alt="roseville">
-                <img src="./imagescopy/activities/exterior.jpg" alt="roseville">
-                <img src="./imagescopy/activities/golfland-sunsplash.jpg" alt="roseville">
-                <img src="./imagescopy/activities/thrill-seekers-can-add.jpg" alt="roseville">
-                <img src="./imagescopy/activities/Wesfield-Galleria-Community-Matters-Style-Magazine-Folsom-El-Dorado-Roseville-Rocklin-Foothills-June-2023-02.png" alt="roseville">
+                <h2>Sites to see!</h2>
+                <h3>Galeria Mall</h3>
+                <img src="./imagescopy/activities/california-roseville-top-things-to-do-fountains-at-roseville2.jpg" alt="roseville" loading="lazy" id="first-image">
+                <h3>Golfland</h3>
+                <img src="./imagescopy/activities/california-roseville-top-things-to-do-golfland-sunsplash1.jpg" alt="roseville" loading="lazy">
+                <h3>Top Golf</h3>
+                <img src="./imagescopy/activities/exterior.jpg" alt="roseville" loading="lazy">
+                <h3>Sunsplash</h3>
+                <img src="./imagescopy/activities/golfland-sunsplash.jpg" alt="roseville" loading="lazy">
+                <h3>I-Fly</h3>
+                <img src="./imagescopy/activities/thrill-seekers-can-add.jpg" alt="roseville" loading="lazy">
+                <h3>Galeria Mall (Inside)</h3>
+                <img src="./imagescopy/activities/Wesfield-Galleria-Community-Matters-Style-Magazine-Folsom-El-Dorado-Roseville-Rocklin-Foothills-June-2023-02.png" alt="roseville" loading="lazy">
             </div>
         </div>
     </main>

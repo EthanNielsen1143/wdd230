@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Nielsen - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Ethan Nielsen's course assignment portal">
+    <meta name="author" content="Ethan Nielsen">
+    <link rel="stylesheet" href="../styles/base.css">
+    <script src="../scripts/getdates.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+<body>
+    <header>
+        <img src="../images/ethanpfp.webp" alt="Your Profile Image">
+        <h1>Ethan Nielsen</h1>
+    </header>
+    <div class="hero-container">
+        <nav>   
+            <ul>
+                <li><button id="hamburger">&#9776;</button></li>
+                <li><a href="../index.html">Home</a></li>   
+                <li><a href="../lesson02/design-principles.html">Design Principles</a></li>
+                <li><a href="../chamber/index.html" target="_blank">Chamber</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/5?lang=eng" target="_blank">Scripture</a></li>
+                <li><a href="../chamber/discover.html" target="_blank">Discover</a></li>
+            </ul>
+        </nav>
+    </div>  
+    <main>
+        <div class="main-input">
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                <legend>Personal Information</legend>
+            
+                <label for="firstName">Applicant's First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            
+                <label for="lastName">Applicant's Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                </fieldset>
+            
+                <fieldset>
+                <legend>Position Information</legend>
+            
+                <label for="position">Applicant's Title/Position</label>
+                <input type="text" id="position" name="position" pattern="^[a-zA-Z -]{7,}$">
+                </fieldset>
+            
+                <fieldset>
+                <legend>Contact Information</legend>
+            
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
+            
+                <label for="mobile">Mobile Phone Number</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                </fieldset>
+            
+                <fieldset>
+                <legend>Organization Information</legend>
+            
+                <label for="organization">Business/Organization Name</label>
+                <input type="text" id="organization" name="organization" required>
+            
+                <label for="membershipLevel">Membership Level</label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP">NP Membership (Non-profit, no fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+                </fieldset>
+            
+                <fieldset>
+                <legend>Additional Information</legend>
+            
+                <label for="description">Business/Organization Description</label>
+                <textarea id="description" name="description"></textarea>
+                </fieldset>
+            
+                <input type="hidden" id="timestamp" name="timestamp">
+            
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+        </main>
+    <div class="footer-container">
+        <footer>
+            <p>&#169; <span id="currentYear"></span> Ethan Nielsen</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+</html>

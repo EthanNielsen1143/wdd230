@@ -182,10 +182,20 @@ main-input {
   
 }
 
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
+}
+
+.thankyoumessage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkgray);
+  padding: 100px;
 }
 
 .card-container {

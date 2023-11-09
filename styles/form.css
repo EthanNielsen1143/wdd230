@@ -220,6 +220,18 @@
   .card ul li a:hover {
     background-color: var(--navy);
   }
+
+  .submitted-message {
+    width: 100%;
+    max-width: 1702.5px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkgray);
+    flex-direction: column;
+    padding: 100px;
+    color: white
+  }
   
   .map {
     width: 100%;

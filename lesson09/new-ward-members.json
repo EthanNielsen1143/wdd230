@@ -1,0 +1,27 @@
+{
+    "family": [
+        {
+            "name": "Nielsen",
+            "date-moved-in": "2013-01-01",
+            "number-of-people": 3,
+            "visted": true,
+            "members": [
+                {
+                    "name": "Ethan",
+                    "male": true,
+                    "birthday": "2003-06-01"
+                },
+                {
+                    "name": "Eric",
+                    "male": true,
+                    "birthday": "1976-05-09"
+                },
+                {
+                    "name": "Anna",
+                    "male": false,
+                    "birthday": "1976-06-15"
+                }
+            ]
+        }
+    ]
+}

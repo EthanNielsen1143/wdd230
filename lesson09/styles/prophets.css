@@ -1,0 +1,25 @@
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+#cards section:not(:empty) {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(36, 36, 36, 0.267);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 50px;
+}

@@ -4,13 +4,21 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 20px;
+    gap: 10px;
 }
 
-#cards section:not(:empty) {
-    padding: 20px;
+#cards section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
     border-radius: 20px;
     background-color: rgba(36, 36, 36, 0.267);
+}
+
+#cards section img {
+    border-radius: 5px;
 }
 
 header {

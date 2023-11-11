@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add social media meta settings here -->
+    <meta property="og:title" content="Roseville - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="URL_to_your_image.jpg">
+    <meta property="og:url" content="URL_to_your_website">
+    <link rel="stylesheet" href="./styles/chamber.css">
+    <script src="./scripts/directory.js"></script>
+    <title>Roseville - Chamber of Commerce</title>
+</head>
+<body>      
+    <header class="header">
+        <img src="./images/communityIcon_8bmo9ca4dmj01.webp" alt="Roseville Logo" id="roselogo">
+        <div class="header-content">
+            <h1 class="title">Roseville, CA</h1>
+            <h3>Chamber of Commerce</h3>
+        </div>
+        <div class="hamburger"></div>
+        <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+        <label for="dark-mode-toggle" class="dark-mode-label"></label>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <button id="toggleViewButton">Toggle View</button>
+        <div class="members-container">
+            <!-- Directory.js adds cards here -->
+        </div>
+    </main>
+    <footer>
+        <div class="development-info">
+            <p>Created by: Ethan Nielsen</p>
+            <p>WDD 230 Project</p>  
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <!-- Include your JavaScript for the hamburger menu here -->
+    <script src="/chamber/scripts/main.js"></script>
+</body>
+</html>

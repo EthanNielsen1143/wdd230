@@ -251,6 +251,30 @@ main {
     height: auto;
 }
 
+.members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.members-container.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.members-container.list-view {
+    display: block;
+}
+
+.members-container.list-view .card {
+    margin-bottom: 20px;
+}
+
 /* Footer styles */
 footer {
     background-color: #333;

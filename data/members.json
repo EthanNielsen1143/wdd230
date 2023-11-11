@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "John",
+            "address": "123 Main St",
+            "phoneNumber": "555-123-4567",
+            "webiste": "www.john.com",
+            "img": "../chamber/images/member-stamp.jpg"
+        },
+        {
+            "name": "Jane",
+            "address": "1234 Main St",
+            "phoneNumber": "556-123-4567",
+            "webiste": "www.jane.com",
+            "img": "../chamber/images/member-stamp.jpg"
+        },
+        {
+            "name": "Joe",
+            "address": "12345 Main St",
+            "phoneNumber": "557-123-4567",
+            "webiste": "www.joe.com",
+            "img": "../chamber/images/member-stamp.jpg"
+        },
+        {
+            "name": "Jill",
+            "address": "123456 Main St",
+            "phoneNumber": "558-123-4567",
+            "webiste": "www.jill.com",
+            "img": "../chamber/images/member-stamp.jpg"
+        },
+        {
+            "name": "Jack",
+            "address": "1234567 Main St",
+            "phoneNumber": "559-123-4567",
+            "webiste": "www.jack.com",
+            "img": "../chamber/images/member-stamp.jpg"
+        },
+        {
+            "name": "Jenny",
+            "address": "12345678 Main St",
+            "phoneNumber": "550-123-4567",
+            "webiste": "www.jenny.com",
+            "img": "../chamber/images/member-stamp.jpg"
+        },
+        {
+            "name": "Jim",
+            "address": "123456789 Main St",
+            "phoneNumber": "551-123-4567",
+            "webiste": "www.jim.com",
+            "img": "../chamber/images/member-stamp.jpg"
+        },
+        {
+            "name": "Jen",
+            "address": "1234567890 Main St",
+            "phoneNumber": "552-123-4567",
+            "webiste": "www.jen.com",
+            "img": "../chamber/images/member-stamp.jpg"
+        }
+    ]
+}

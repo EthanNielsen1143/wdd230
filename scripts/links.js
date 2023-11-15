@@ -1,28 +1,30 @@
 const baseURL = "https://github.com/EthanNielsen1143/wdd230";
-const linksURL = "https://github.com/EthanNielsen1143/wdd230/blob/main/data/links.json";
+const linksURL = "https://raw.githubusercontent.com/EthanNielsen1143/wdd230/main/data/links.json";
+
 
 async function getLinks() {
-    try {
-        const response = await fetch(linksURL);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
+    const response = await fetch(linksURL);
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    else {
+        console.log('Hello from the else statement')
         const data = await response.json();
         displayLinks(data);
-    } catch (error) {
-        console.error('Error fetching data:', error);
     }
 }
 
-const displayLinks = (links) => {
+const displayLinks = (data) => {
+    const lessons = data.lessons;
+
     const linkList = document.createElement('ul');
 
-    links.forEach(link => {
+    lessons.forEach(lesson => {
         const listItem = document.createElement('li');
-        const linkElement = document.createElement('a');
+        const linkElement = document.createElement('a'); 
 
-        linkElement.href = link.url;
-        linkElement.textContent = link.name;
+        linkElement.href = lesson.links.url;
+        linkElement.textContent = lesson.links.week + " | " + lesson.links.title;
         linkElement.target = "_blank";
 
         listItem.appendChild(linkElement);
@@ -32,5 +34,6 @@ const displayLinks = (links) => {
     const cardContainer = document.querySelector('.card');
     cardContainer.appendChild(linkList);
 }
+
 
 getLinks();

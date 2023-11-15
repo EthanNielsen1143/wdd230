@@ -3,13 +3,15 @@
         {
             "lesson": "01",
             "links": {
+                "week": "01",
                 "url": "../lesson01/holygrail.html",
-                "title": "Holy Grail"
+                "title": "Holy Grail"                
             }
         },
         {
             "lesson": "02",
             "links": {
+                "week": "02",
                 "url": "../lesson02/design-principles.html",
                 "title": "Design Principles"
             }
@@ -17,6 +19,7 @@
         {
             "lesson": "03",
             "links": {
+                "week": "03",
                 "url": "../lesson03/lazyloads.html",
                 "title": "Lazy Loads"
             }
@@ -24,13 +27,15 @@
         {
             "lesson": "04",
             "links": {
-                "url": "",
-                "title": "N/A"
+                "week": "04",
+                "url": "https://codepen.io/Ethan-Nielsen/pens/public",
+                "title": "Code Pen Profile"
             }
         },
         {
             "lesson": "05",
             "links": {
+                "week": "05",
                 "url": "../lesson05/bom.html",
                 "title": "BOM"
             }
@@ -38,6 +43,7 @@
         {
             "lesson": "06",
             "links": {
+                "week": "06",
                 "url": "../lesson06/responsive-images.html",
                 "title": "Responsive Images"
             }
@@ -45,6 +51,7 @@
         {
             "lesson": "07",
             "links": {
+                "week": "07",
                 "url": "",
                 "title": "N/A"
             }
@@ -52,13 +59,15 @@
         {
             "lesson": "08",
             "links": {
-                "url": "./lesson01/holygrail.html",
-                "title": "Holy Grail"
+                "week": "08",
+                "url": "./tablebuild.html",
+                "title": "Table Build"
             }
         },
         {
             "lesson": "09",
             "links": {
+                "week": "09",
                 "url": "../lesson09/prophets.html",
                 "title": "Prophets"
             }
@@ -66,6 +75,7 @@
         {
             "lesson": "10",
             "links": {
+                "week": "10",
                 "url": "",
                 "title": "TBD"
             }

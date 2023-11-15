@@ -24,7 +24,7 @@ const displayLinks = (data) => {
         const linkElement = document.createElement('a'); 
 
         linkElement.href = lesson.links.url;
-        linkElement.textContent = lesson.links.week + " | " + lesson.links.title;
+        linkElement.textContent = "Week " + lesson.links.week + " | " + lesson.links.title;
         linkElement.target = "_blank";
 
         listItem.appendChild(linkElement);

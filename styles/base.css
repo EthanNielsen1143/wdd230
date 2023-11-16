@@ -174,16 +174,75 @@ main {
   width: 100%;
 }
 
-main-input {
+.main-input {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2em 0;
+  color: white;
+  padding: 2em 0;
   
 }
 
+.main-input h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
 
-@media (max-width: 768px) {
+.main-input h2 {
+  color:white;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-right: 1em;
+  background-color: black;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: rgb(37, 37, 37) 2px 2px 5px;
+}
+
+.main-input fieldset{
+  border: var(--bord);
+  padding: 2em;
+  box-shadow: rgb(37, 37, 37) 2px 2px 5px;
+  background-color: #000;
+}
+
+.main-input fieldset:first-child {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.main-input fieldset:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.main-input input {
+  margin: 0 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: var(--bord);
+  background-color: var(--darkgray);
+  color: white;
+}
+
+.main-input button {  
+  margin-top: 2em;
+  background-color: var(--byuiblue);
+  color:white;
+  border-radius: 10px;
+  padding: 1em 2em;
+  font-weight: bold;
+  font-size: large;
+}
+
+.main-input button:hover {
+  background-color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+@media (max-width: 768px) { 
   .hamburger {
     display: flex;
   }

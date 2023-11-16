@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/base.css">
     <script src="./scripts/links.js"></script>
     <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/weatherapi.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 </head>
 <body>
@@ -43,6 +44,16 @@
         </section> 
         <section class="info-container">
             <h2>Information</h2>
+            <div class="weather">
+                <h3>Weather</h3>
+                <div class="weather-container">
+                    <p id="weather-temp">Loading...</p>
+                    <p id="weather-desc">Loading...</p>
+                    <div class="weather-icon">
+                        <img id="weather-icon" src="..." alt="Weather Icon">
+                    </div>
+                </div>
+            </div>  
             <div class="pagevisits">
                 <p id="pageVisitCounter">Page Visits: Loading...</p>
             </div>

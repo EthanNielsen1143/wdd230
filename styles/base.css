@@ -182,7 +182,6 @@ main {
   margin: 2em 0;
   color: white;
   padding: 2em 0;
-  
 }
 
 .main-input h3 {
@@ -316,15 +315,43 @@ main {
 }
 
 .info-container h2 {
-  margin-top: 2em;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: 3px 3px 5px black;
 }
 
 #pageVisitCounter {
   font-size: 18px;
-  background-color: var(--byuiblue);
+  background-color: rgb(43, 43, 43);
   margin-bottom: 2em;
   padding: 2em;
   border-radius: 10px;
+  color: white;
+  box-shadow: 0px 0px 10px white;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  border-radius: 10px;
+  font-size: 30px;
+  box-shadow: 0px 0px 10px white;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weather-temp {
+  margin: 0 4em;
 }
 
 /* Styles for footer */

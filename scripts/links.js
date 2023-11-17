@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function(){
             throw new Error('Network response was not ok');
         }
         else {
-            console.log('Hello from the else statement')
             const data = await response.json();
             displayLinks(data);
         }

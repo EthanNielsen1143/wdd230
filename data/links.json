@@ -4,7 +4,7 @@
             "lesson": "01",
             "links": {
                 "week": "01",
-                "url": "../lesson01/holygrail.html",
+                "url": "./lesson01/holygrail.html",
                 "title": "Holy Grail"                
             }
         },
@@ -12,7 +12,7 @@
             "lesson": "02",
             "links": {
                 "week": "02",
-                "url": "../lesson02/design-principles.html",
+                "url": "./lesson02/design-principles.html",
                 "title": "Design Principles"
             }
         },
@@ -20,7 +20,7 @@
             "lesson": "03",
             "links": {
                 "week": "03",
-                "url": "../lesson03/lazyloads.html",
+                "url": "./lesson03/lazyloads.html",
                 "title": "Lazy Loads"
             }
         },
@@ -36,7 +36,7 @@
             "lesson": "05",
             "links": {
                 "week": "05",
-                "url": "../lesson05/bom.html",
+                "url": "./lesson05/bom.html",
                 "title": "BOM"
             }
         },
@@ -44,7 +44,7 @@
             "lesson": "06",
             "links": {
                 "week": "06",
-                "url": "../lesson06/responsive-images.html",
+                "url": "./lesson06/responsive-images.html",
                 "title": "Responsive Images"
             }
         },
@@ -68,7 +68,7 @@
             "lesson": "09",
             "links": {
                 "week": "09",
-                "url": "../lesson09/prophets.html",
+                "url": "./lesson09/prophets.html",
                 "title": "Prophets"
             }
         },

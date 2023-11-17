@@ -76,8 +76,8 @@
             "lesson": "10",
             "links": {
                 "week": "10",
-                "url": "",
-                "title": "TBD"
+                "url": "./lesson10/weather.html",
+                "title": "weather"
             }
         }
     ]

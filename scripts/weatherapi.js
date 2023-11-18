@@ -20,5 +20,4 @@ const displayWeather = (data) => {
     tempElement.textContent = `Temp: ${temp}\u00B0F`;
     conditionElement.textContent = `Condition: ${condition}`;
 }
-
 getWeather();

@@ -257,6 +257,10 @@ main {
     gap: 20px;
 }
 
+.members-container img {
+    max-width: 150px;
+}
+
 .card {
     border: 1px solid #ccc;
     padding: 10px;

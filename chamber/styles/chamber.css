@@ -1,6 +1,23 @@
 /* Apply a normalize or reset CSS here */
 :root {
     --mainblue: #0f65ac;
+    --alink: #0000ee;
+  --avisited: #551a8b;
+  /* Define your color variables here */
+  --lightgray: rgb(220, 220, 220);
+  --gray: rgb(150, 150, 150);
+  --darkgray: rgb(50, 50, 50);
+  --byuiblue: rgb(0, 110, 182);
+  --bloo: rgb(0, 36, 110);
+  --red: rgb(182, 0, 19);
+  --mustard: rgb(182, 163, 0);
+  --callout: rgb(230, 243, 254);
+  --error: rgb(255, 215, 225);
+  --warning: rgb(255, 255, 225);
+  --details: rgb(238, 254, 238);
+  /* Define your spacing and border variables here */
+  --padd: 0.5rem;
+  --bord: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* Global styles */
 body {
@@ -64,32 +81,82 @@ header {
 }
 
 /* Navigation styles */
-nav {
-    background-color: #444;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    display: none;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav li {
-    margin: 10px 0;
-}
-
-nav a {
+.hero-container {
+    display: flex;
+    width: 100%;
+    height: 20em;
+    background-image: url('../../images/LDS_Oakland-Exterior_002.webp');
+    background-size: cover;
+    background-position: 25% 20%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styles for nav and nav span */
+  nav {
+    position: relative;
+    padding-top: 30px;
+    width: fit-content;
+    width: -moz-fit-content;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a {
     text-decoration: none;
-    color: white;
+    color: var(--darkgray);
+    font-weight: bold;
+    margin: 0 1rem;
     transition: color 0.3s;
-}
+  }
+  
+  nav a:hover {
+    color: white;
+  }
 
-nav a:hover {
-    color: #8c3dc0;
-}
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--byuiblue);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--navy);
+  }
+  
+  nav span a:link,
+  nav span a:visited,
+  nav span a:active,
+  nav span a:focus {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    order: var(--bord);
+  }
+  
+  nav span a:hover {
+    background-color: var(--byuiblue);
+    color: #ffffff;
+  }
 
 /* Main content styles */
 main {

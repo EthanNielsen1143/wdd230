@@ -14,7 +14,6 @@ async function getWeather() {
 }
 
 const displayWeather = (data) => {
-    console.log("sup");
     const temp = Math.round(data.main.temp - 273.15) * 9/5 + 32;
     const main = data.weather[0].main;
     const desc = data.weather[0].description;

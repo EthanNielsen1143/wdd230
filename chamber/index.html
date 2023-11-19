@@ -54,29 +54,35 @@
             </ul>
         </section>
         
+        <div id="meetGreetBanner" class="banner">
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+            <button id="closeBanner">Close</button>
+          </div>
+
         <section class="weather">
             <h2>Weather Forecast</h2>
-            <p>Temperature: <input type="number" id="temperature-input">°F</p>  
-            <p>Wind Speed: <input type="number" id="windspeed-input">MPH</p>  
-            <input type="submit" id="submit-button" value="Calculate Wind Chill">
-            <div class="weather-results">
-                <p>Today's weather: <span id='temperature-description'>Wating for input...</span></p>
-                <p>Today's wind chill: <span id='wind-chill'>N/A</span></p>
-            </div>
+            <p id="temperature-input">Loading...</p>  
+            <p id='temperature-description'>Description loading...</p>
+            <img id="weather-icon" src="" alt="Weather Icon">
         </section>
+
+        <section id="forecast-container" class="forecast">
+            <h2>3-Day Weather Forecast</h2>
+            <!-- Forecast items will be added dynamically here -->
+          </section>
 
         <section class="spotlights">
             <h2>Spotlights</h2>
             <div class="spotlight">
-                <img src="spotlight1.jpg" alt="Spotlight 1">
+                <!-- <img src="spotlight1.jpg" alt="Spotlight 1"> -->
                 <p>Company Spotlight 1</p>
             </div>
             <div class="spotlight">
-                <img src="spotlight2.jpg" alt="Spotlight 2">
+                <!-- <img src="spotlight2.jpg" alt="Spotlight 2"> -->
                 <p>Company Spotlight 2</p>
             </div>
             <div class="spotlight">
-                <img src="spotlight3.jpg" alt="Spotlight 3">
+                <!-- <img src="spotlight3.jpg" alt="Spotlight 3"> -->
                 <p>Company Spotlight 3</p>
             </div>
         </section>

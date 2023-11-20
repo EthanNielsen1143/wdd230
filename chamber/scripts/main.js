@@ -23,58 +23,58 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    async function getWeather() {
-      // const url = "https://api.openweathermap.org/data/2.5/onecall?lat=49.750000&lon=6.633333&appid=785f1aebf1a53ae8d37c7db6bf435044";
-      const url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=49.750000&lon=6.633333&cnt=3&appid=e3656fdda1b05098664b45f92e5a2e0c";
-      try {
-        const response = await fetch(url);
-        if (response.ok) {
-          const data = await response.json();
-          displayWeather(data);
-        } else {
-          throw Error(await response.text());
-        }
-      } catch (error) {
-        console.log(error);
-      }
+  // Function to fetch weather data from OpenWeatherMap API
+  const kelvinToCelsius = (kelvin) => kelvin - 273.15;
+  const celsiusToFahrenheit = (celsius) => (celsius * 9) / 5 + 32;
+
+const fetchWeatherData = async () => {
+  try {
+    const currentWeatherResponse = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=38.752125&lon=-121.288010&appid=ad136a05b7f30c19817811ed609c2969`
+    );
+    const currentWeatherData = await currentWeatherResponse.json();
+
+    const forecastResponse = await fetch(
+      `https://api.openweathermap.org/data/2.5/forecast?lat=38.752125&lon=-121.288010&appid=ad136a05b7f30c19817811ed609c2969`
+    );
+    const forecastData = await forecastResponse.json();
+
+    // Update current weather
+    const currentTempElement = document.getElementById("current-temp");
+    const currentDescElement = document.getElementById("current-description");
+
+    // Convert temperature to Fahrenheit
+    const currentTempFahrenheit = celsiusToFahrenheit(kelvinToCelsius(currentWeatherData.main.temp));
+    currentTempElement.innerText = `${currentTempFahrenheit.toFixed(2)}°F`;
+    currentDescElement.innerText = currentWeatherData.weather[0].description;
+
+    // Update 3-day forecast
+    for (let i = 0; i < 3; i++) {
+      const forecastElement = document.getElementById(`day${i + 1}`);
+      const forecastTime = forecastData.list[i * 8].dt_txt;
+      const forecastTemp = celsiusToFahrenheit(kelvinToCelsius(forecastData.list[i * 8].main.temp));
+      const forecastDesc = forecastData.list[i * 8].weather[0].description;
+
+      const date = new Date(forecastTime);
+      const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(date);
+
+      forecastElement.innerHTML = `<strong>${dayOfWeek}</strong><br>${forecastTemp.toFixed(2)}°F, ${forecastDesc}`;
     }
-    
-    const displayWeather = (data) => {
-      const forecastContainer = document.querySelector('#forecast-container');
-    
-      for (let i = 1; i <= 3; i++) {
-        const dailyData = data.daily[i];
-        const date = new Date(dailyData.dt * 1000); // Convert Unix timestamp to JavaScript date object
-        const day = date.toLocaleDateString('en-US', { weekday: 'long' });
-    
-        const tempMin = Math.round(dailyData.temp.min - 273.15) * 9/5 + 32;
-        const tempMax = Math.round(dailyData.temp.max - 273.15) * 9/5 + 32;
-        const description = dailyData.weather[0].description;
-        const icon = dailyData.weather[0].icon;
-    
-        const forecastItem = document.createElement('div');
-        forecastItem.classList.add('forecast-item');
-        console.log(tempMin);
-        forecastItem.innerHTML = `
-          <p>${day}</p>
-          <img src="http://openweathermap.org/img/wn/${icon}.png" alt="${description}">
-          <p>Min: ${tempMin}\u00B0F</p>
-          <p>Max: ${tempMax}\u00B0F</p>
-          <p>${description}</p>
-        `;
-    
-        forecastContainer.appendChild(forecastItem);
-      }
-    }
-    getWeather();
+  } catch (error) {
+    console.error('Error fetching weather data:', error);
+  }
+};
+  // Call the function to fetch weather data
+  fetchWeatherData();
   } 
+
   const meetGreetBanner = document.getElementById("meetGreetBanner");
   const closeBannerButton = document.getElementById("closeBanner");
 
   function isMeetGreetDay() {
     const currentDate = new Date();
     const currentDay = currentDate.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
-    return currentDay >= 1 && currentDay <= 3; // Monday, Tuesday, or Wednesday
+    return currentDay >= 0 && currentDay <= 3; // Monday, Tuesday, or Wednesday
   }
 
   // Function to show/hide the meet and greet banner

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM Content Loaded");
 
-    const rootFile = "../../data/members.json";
+    const rootFile = "../data/members.json";
     let isGridView = true; // Initial view is grid
 
     async function getMembers() {

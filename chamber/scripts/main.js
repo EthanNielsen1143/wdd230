@@ -1,5 +1,4 @@
 function main() {
-  const hamburgerButton = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".hero-container nav");
   const lastModifiedSpan = document.getElementById("lastModified");
   const darkModeToggle = document.getElementById("dark-mode-toggle");

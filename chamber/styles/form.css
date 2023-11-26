@@ -280,7 +280,7 @@ form label, form input, form button {
   /* Style the submit button */
   form button {
     background-color: var(--primary-color);
-    color: #fff;
+    background-color: #1374a8;
     padding: 10px 20px;
     border: none;
     border-radius: var(--border-radius);
@@ -288,7 +288,7 @@ form label, form input, form button {
   }
   
   form button:hover {
-    background-color: #1374a8;
+    background-color: white;
   }
   
   #passwordMismatch {

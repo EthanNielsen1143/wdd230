@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM Content Loaded");
+
     const rootFile = "../../data/members.json";
     let isGridView = true; // Initial view is grid
 
@@ -9,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayMembers(data) {
-        const members = data.members;   
+        const members = data.members;
         const membersContainer = document.querySelector(".members-container");
 
         // Clear existing content before displaying new content
@@ -39,26 +41,24 @@ document.addEventListener("DOMContentLoaded", () => {
             img.src = member.img;
             card.appendChild(img);
 
-            membersContainer.appendChild(card);   
+            membersContainer.appendChild(card);
         });
-    }    
+    }
 
     function toggleView() {
-        isGridView = !isGridView; 
+        isGridView = !isGridView;
         const membersContainer = document.querySelector(".members-container");
 
-        if (isGridView) {
-            membersContainer.classList.add("grid-view");
-            membersContainer.classList.remove("list-view");
-        } else {
-            membersContainer.classList.add("list-view");
-            membersContainer.classList.remove("grid-view");
-        }
+        membersContainer.classList.toggle("grid-view", isGridView);
+        membersContainer.classList.toggle("list-view", !isGridView);
     }
 
     getMembers()
-        .then(data => displayMembers(data));
-
-
-    document.getElementById("toggleViewButton").addEventListener("click", toggleView);
+        .then(data => {
+            displayMembers(data);
+            document.getElementById("toggleViewButton").addEventListener("click", toggleView);
+        })
+        .catch(error => {
+            console.error("Error loading members:", error);
+        });
 });

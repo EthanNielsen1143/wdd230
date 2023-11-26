@@ -9,8 +9,6 @@
     <meta property="og:image" content="URL_to_your_image.jpg">
     <meta property="og:url" content="URL_to_your_website">
     <link rel="stylesheet" href="./styles/chamber.css">
-    <script src="./scripts/main.js"></script>
-    <script src = "../scripts/getdates.js"></script>
     
     <title>Roseville - Chamber of Commerce</title>
 </head>
@@ -23,18 +21,13 @@
                 <nav>
                     <ul>
                         <li><a href="../index.html">Home</a></li>   
-                        <li><a href="../lesson02/design-principles.html">Design Principles</a></li>
-                        <li><a href="../chamber/index.html" target="_blank">Chamber</a></li>
-                        <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-                        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/5?lang=eng" target="_blank">Scripture</a></li>
-                        <li><a href="../chamber/discover.html" target="_blank">Discover</a></li>
-                        <li><a href="../chamber/join.html" target="_blank">Join</a></li>
+                        <li><a href="discover.html" target="_blank">Discover</a></li>
+                        <li><a href="join.html" target="_blank">Join</a></li>
                         <li><a href="../form.html" target="_blank">Form</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <!-- <div class="hamburger"></div> -->
         <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
         <label for="dark-mode-toggle" class="dark-mode-label"></label>
     </header>
@@ -57,13 +50,13 @@
                 <button id="closeBanner">Close</button>
             </div>
         </div>
-        </section>    
+        </section>   
         <div class="weather" id="weather">
             <h2>Current Weather</h2>
             <p id="current-temp">Loading...</p>
             <p id="current-description">Loading...</p>
         </div>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99552.58759052053!2d-121.29261705!3d38.76328285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809b1f65623c1879%3A0x22af4a52ba493999!2sRoseville%2C%20CA!5e0!3m2!1sen!2sus!4v1696029906805!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="weather-container">
             <h2>3-Day Weather Forecast</h2>
             <div class="weather-forecast">
@@ -72,32 +65,23 @@
                 <div id="day3">Loading...</div>
             </div>
         </div>
-
         <section class="spotlights">
             <h2>Spotlights</h2>
             <div class="spotlight">
-                <img src="imagescopy/activities/california-roseville-top-things-to-do-fountains-at-roseville2.jpg" alt="Spotlight 1">
-            </div>
-            <div class="spotlight">
-                <img src="imagescopy/activities/golfland-sunsplash.jpg" alt="Spotlight 2">
-            </div>
-            <div class="spotlight">
-                <img src="imagescopy\activities\thrill-seekers-can-add.jpg" alt="Spotlight 3">
+                <!-- Members will be put here at random -->
             </div>
         </section>
     </main>
-    
     <footer>
         <div class="contact-info">
             <p>Contact us: contact@rosevillechamber.com</p>
-        </div>
+        </div>  
         <div class="development-info">
             <p>Created by: Ethan Nielsen</p>
             <p>WDD 230 Project</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
-    </footer>
-    <!-- Include your JavaScript for the hamburger menu here -->
-    <script src="/chamber/scripts/main.js"></script>
+    </footer>   
+    <script src="scripts/main.js"></script>
 </body>
 </html>

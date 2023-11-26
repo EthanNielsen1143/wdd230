@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,42 +10,51 @@
     <meta property="og:image" content="URL_to_your_image.jpg">
     <meta property="og:url" content="URL_to_your_website">
     <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/directory.js"></script>
     <title>Roseville - Chamber of Commerce</title>
 </head>
-<body>      
+
+<body>
     <header class="header">
-        <img src="images/communityIcon_8bmo9ca4dmj01.webp" alt="Roseville Logo" id="roselogo">
         <div class="header-content">
-            <h1 class="title">Roseville, CA</h1>
-            <h3>Chamber of Commerce</h3>
+            <img src="./images/communityIcon_8bmo9ca4dmj01.webp" alt="Roseville Logo" id="roselogo">
+            <h1 class="title">Roseville CA</h1>
+            <div class="hero-container">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="discover.html" target="_blank">Discover</a></li>
+                        <li><a href="join.html" target="_blank">Join</a></li>
+                        <li><a href="../form.html" target="_blank">Form</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="hamburger"></div>
         <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
         <label for="dark-mode-toggle" class="dark-mode-label"></label>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
     <main>
+        <section class="hero">
+            <h1>DIRECTORY</h1>
+        </section>
         <button id="toggleViewButton">Toggle View</button>
         <div class="members-container">
             <!-- Directory.js adds cards here -->
+            <div class="card">
+                <!-- Your card content here -->
+            </div>
+            <!-- Repeat the above structure for each card -->
         </div>
     </main>
     <footer>
         <div class="development-info">
             <p>Created by: Ethan Nielsen</p>
-            <p>WDD 230 Project</p>  
+            <p>WDD 230 Project</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
-    <!-- Include your JavaScript for the hamburger menu here -->
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/getDatesChamber.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

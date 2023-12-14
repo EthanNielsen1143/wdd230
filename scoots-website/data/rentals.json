@@ -1,0 +1,47 @@
+{
+    "rentals": [
+      {
+        "type": "Scooter",
+        "maxPersons": 1,
+        "halfDayPrice": 20,
+        "fullDayPrice": 30
+      },
+      {
+        "type": "ATV",
+        "maxPersons": 4,
+        "halfDayPrice": 50,
+        "fullDayPrice": 70
+      },
+      {
+        "type": "Jeep",
+        "maxPersons": 5,
+        "halfDayPrice": 70,
+        "fullDayPrice": 100
+      },
+      {
+        "type": "Dirt Bike",
+        "maxPersons": 1,
+        "halfDayPrice": 30,
+        "fullDayPrice": 50
+      },
+      {
+        "type": "Beach Cruiser Bicycle",
+        "maxPersons": 1,
+        "halfDayPrice": 15,
+        "fullDayPrice": 25
+      },
+      {
+        "type": "WaveRunner",
+        "maxPersons": 2,
+        "halfDayPrice": 80,
+        "fullDayPrice": 120
+      },
+      {
+        "type": "Convertible Car",
+        "maxPersons": 4,
+        "halfDayPrice": 100,
+        "fullDayPrice": 150
+      }
+    ]
+  }
+  

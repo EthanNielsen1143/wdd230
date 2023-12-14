@@ -1,0 +1,59 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Scoots Rentals</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Scoots Rentals</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="closeable-message">
+    <!-- The closeable message will be dynamically populated by the Js -->
+  </section>
+  <section id="weather-section">
+      <h2>Current Weather in Cozumel</h2>
+      <p>Temperature: <span id="temperature">XX°C</span></p>
+      <p>Humidity: <span id="humidity">XX%</span></p>
+      <p>Forecast at 15:00: <span id="forecast">XX°C</span></p>
+    </section>
+    
+  <div class="rentalaction">
+      <section id="rental-summary">
+          <h2>Explore Cozumel with Scoots Rentals</h2>
+          <p>We offer a variety of rental options, including scooters, ATVs, and jeeps.</p>
+          <p>Explore the beautiful island of Cozumel at your own pace!</p>
+        </section>
+        
+        <section id="call-to-action">
+            <h2>Ready to explore Cozumel?</h2>
+            <p>Make your reservation now!</p>
+            <a href="reservations.html" class="cta-button">Reserve Now</a>
+        </section>
+    </div>
+
+  <footer>
+    <p>&copy; 2023 Scoots Rentals</p>
+    <div class="social-media-links">
+      <a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="images/facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.twitter.com" target="_blank" title="Twitter"><img src="images/twitter-icon.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

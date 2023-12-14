@@ -1,0 +1,262 @@
+:root {
+  --main-bg-color: #ffffff;      /* Light Grey */
+  --header-bg-color: #003468;    /* Dark Blue */
+  --primary-text-color: #fff;    /* White */
+  --section-border-color: #ddd;  /* Light Grey */
+  --section-bg-color: #d1d1d1;   /* White */
+  --section-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --cta-bg-color: #003468;       /* Dark Blue */
+  --table-header-bg-color: #003468; /* Dark Blue */
+  --button-bg-color: #003468;    /* Dark Blue */
+  --contact-header-color: #003468; /* Dark Blue */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+}
+
+header {
+  background-color: var(--header-bg-color);
+  color: var(--primary-text-color);
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  background-color: #000000;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+section {
+  margin: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+a.cta-button {
+  color: #000;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.cta-button:hover {
+  background-color: #008ab4;
+}
+
+#weather-section {
+  border: 1px solid var(--section-border-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--section-bg-color);
+  border-radius: 10px;
+  box-shadow: var(--section-box-shadow);
+}
+
+#weather-section h2 {
+  color: var(--cta-bg-color);
+  margin-bottom: 10px;
+}
+
+#weather-section p {
+  font-weight: 600;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+.weather-icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#closeable-message {
+  background-color: #7ccbff;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: var(--section-box-shadow);
+  display: none;
+}
+
+.close {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.rentalaction {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 10px;
+
+}
+
+#rental-summary {
+  background-color: var(--section-bg-color);
+  padding: 20px;
+  border: 1px solid var(--section-border-color);
+  border-radius: 10px;
+  box-shadow: var(--section-box-shadow);
+}
+
+#call-to-action {
+  background-color: var(--cta-bg-color);
+  color: var(--primary-text-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: var(--section-box-shadow);
+}
+
+#rentals-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#rentals-table th,
+#rentals-table td {
+  border: 1px solid var(--section-border-color);
+  padding: 10px;
+}
+
+#rentals-table th {
+  background-color: var(--table-header-bg-color);
+  color: var(--primary-text-color);
+}
+
+.reservation-section {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+form {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--section-border-color);
+  border-radius: 5px;
+}
+
+#map {
+  max-width: 96%;
+  height: 300px;
+  box-sizing: border-box;
+  border: 1px solid var(--section-border-color);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.contact-section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#contact-info {
+  background-color: var(--section-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--section-box-shadow);
+}
+
+#contact-info h2 {
+  color: var(--contact-header-color);
+}
+
+#contact-info p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#contact-form {
+  display: grid;
+  gap: 10px;
+}
+
+#contact-form label {
+  font-weight: bold;
+}
+
+#contact-form button {
+  background-color: var(--button-bg-color);
+  color: var(--primary-text-color);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  background-color: black;
+  color: var(--primary-text-color);
+  padding: 1em;
+  text-align: center;
+}
+
+footer a img {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 10px;
+}
